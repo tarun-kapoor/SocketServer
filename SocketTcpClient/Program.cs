@@ -18,7 +18,7 @@ namespace SocketTcpClient
             
             try
             {
-                client = new TcpClient("LNGDAYL-7008290", 2055);
+                client = new TcpClient("<ServerHostName>", 2055);
                 Stream s = client.GetStream();
                 StreamReader sr = new StreamReader(s);
                 StreamWriter sw = new StreamWriter(s);
